@@ -1,0 +1,30 @@
+.calculate {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.calculate__link {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 38px;
+  display: inline-block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 102px;
+  background-color: #000000;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: -5px;
+    width: 65px;
+    height: 65px;
+    background-image: url("../img/calculate.svg");
+    background-repeat: no-repeat;
+  }
+}
