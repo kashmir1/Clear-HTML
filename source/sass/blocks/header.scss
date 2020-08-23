@@ -1,0 +1,78 @@
+.header {
+  background-color: #212527;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px 9px;
+  border-bottom: 1px solid #35393C;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-toggle {
+  display: inline-block;
+  width: 25px;
+  height: 16px;
+  background-image: url("../img/menu.svg");
+  background-repeat: no-repeat;
+}
+
+.header__phone {
+  display: inline-block;
+  background-color: #FA7D08;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.header__bottom {
+  padding: 13px 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__tel {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  padding-left: 22px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 1px;
+    background-image: url("../img/orange-phone.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.header__timing {
+  color: #ffffff;
+  font-size: 14px;
+  position: relative;
+  padding-left: 22px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 1px;
+    left: 0;
+    background-image: url("../img/watch.svg");
+    background-repeat: no-repeat;
+  }
+}

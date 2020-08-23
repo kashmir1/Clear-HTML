@@ -6,21 +6,62 @@
   <title>Тайтл</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <!--Хедер-->
 <body>
-<header>
-  Хедер
+<header class="header">
+  <div class="header__top">
+    <a class="header__menu-toggle" href=""></a>
+    <div class="header__logo-wrapper">
+      <img src="img/star.png" width="64" height="50" alt="">
+      <a href="index.html"><img src="img/logo.svg"alt=""></a>
+    </div>
+    <a class="header__phone" href=""></a>
+  </div>
+  <div class="header__bottom">
+    <a class="header__tel" href="tel:+74951080703">+7 (495) 108-07-03</a>
+    <span class="header__timing">Пн-Вс с 9 до 18</span>
+  </div>
+
 </header>
 
 <main>
+  <div class="slider">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="img/slide1.jpg">
+        <div class="text">Тестовая страница для верстки 2</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/slide1.jpg">
+        <div class="text">Тестовая страница для верстки 3</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/slide1.jpg">
+        <div class="text">Тестовая страница для верстки 4</div>
+      </div>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+  </div>
 </main>
 
 <footer>
 
 </footer>
-<script></script>
+<script src="js/slider.js"></script>
 </body>
 </html>
