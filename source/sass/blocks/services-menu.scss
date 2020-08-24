@@ -1,0 +1,40 @@
+.services-menu {
+  margin-top: 31px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.services-menu__list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding-left: 55px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: #FA7D08;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 17px;
+    background-image: url("../img/service-menu.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 14px;
+    right: 15px;
+    top: 19px;
+    background-image: url("../img/drop-arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
