@@ -43,9 +43,15 @@ h2 {
 
 .h2--center {
   text-align: center;
-
+  position: relative;
   &::before {
-    left: 33%;
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      left: 33%;
+      background-color: #FA7D08;
+      bottom: -10px;
   }
 }
 

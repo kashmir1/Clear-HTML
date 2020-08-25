@@ -1,0 +1,52 @@
+.why-we {
+  margin-top: 80px;
+}
+
+.why-we__container {
+  background-color: #222628;
+  margin-top: 105px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.why-we__list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  top: -80px;
+  //margin-top: -80px;
+}
+
+.why-we__item {
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 145px 25px 32px;
+}
+
+.why-we__title {
+  position: relative;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.why-we__title--complex {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -120px;
+    background-image: url("../img/complex.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.why-we__desc {
+  font-size: 15px;
+  line-height: 170%;
+  text-align: center;
+  color: #636363;
+}
