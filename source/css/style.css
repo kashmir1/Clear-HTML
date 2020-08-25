@@ -327,20 +327,6 @@ h1 {
     background-color: #FA7D08;
     bottom: -10px; }
 
-h2, h3, h4, h5, h6 {
-  margin: 0 0 30px;
-  color: #141823;
-  font-weight: bold;
-  line-height: 120%;
-  position: relative; }
-  h2::before, h3::before, h4::before, h5::before, h6::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 1px;
-    background-color: #FA7D08;
-    bottom: -10px; }
-
 h2 {
   font-size: 20px; }
 
@@ -794,5 +780,34 @@ li {
   margin-top: 30px;
   padding-left: 15px;
   padding-right: 15px; }
+
+.advantages {
+  margin-top: 95px; }
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.advantages__title {
+  position: relative;
+  color: #141823;
+  margin-top: 95px;
+  text-align: center; }
+
+.advantages__title--norms::before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: -58px;
+  width: 40px;
+  height: 42px;
+  background-image: url("../img/norms.svg"); }
+
+.advantages__desc {
+  color: #636363;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

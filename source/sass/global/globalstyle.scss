@@ -20,22 +20,22 @@ h1 {
   }
 }
 
-h2, h3, h4, h5, h6 {
-  margin: 0 0 30px;
-  color: #141823;
-  font-weight: bold;
-  line-height: 120%;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 1px;
-    background-color: #FA7D08;
-    bottom: -10px;
-  }
-}
+//h2, h3, h4, h5, h6 {
+//  margin: 0 0 30px;
+//  color: #141823;
+//  font-weight: bold;
+//  line-height: 120%;
+//  position: relative;
+//
+//  &::before {
+//    content: '';
+//    position: absolute;
+//    width: 100px;
+//    height: 1px;
+//    background-color: #FA7D08;
+//    bottom: -10px;
+//  }
+//}
 
 h2 {
   font-size: 20px;
