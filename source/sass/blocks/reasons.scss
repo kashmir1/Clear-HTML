@@ -1,0 +1,38 @@
+.reasons {
+  margin-top: 80px;
+}
+
+.reasons__list {
+  list-style: none;
+  padding: 0;
+}
+
+.reasons__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reasons__img {
+  margin-top: 31px;
+  margin-bottom: 10px;
+}
+
+.reasons__title {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.reasons__desc {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  color: #000000;
+}
+
