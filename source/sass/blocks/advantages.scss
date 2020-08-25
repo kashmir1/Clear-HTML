@@ -27,6 +27,55 @@
   }
 }
 
+.advantages__title--lock {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: -58px;
+    width: 32px;
+    height: 42px;
+    background-image: url("../img/lock.svg");
+  }
+}
+
+.advantages__title--easy {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: -58px;
+    width: 43px;
+    height: 38px;
+    background-image: url("../img/easy.svg");
+  }
+}
+
+.advantages__title--diag {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: -58px;
+    width: 42px;
+    height: 42px;
+    background-image: url("../img/diag.svg");
+  }
+}
+
+.advantages__title--money {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: -58px;
+    width: 42px;
+    height: 42px;
+    background-image: url("../img/money.svg");
+  }
+}
+
+
 .advantages__desc {
   color: #636363;
   font-size: 15px;
