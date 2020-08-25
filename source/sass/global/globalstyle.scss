@@ -2,6 +2,83 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
+h1 {
+  color: #141823;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  position: relative;
+  margin-bottom: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #FA7D08;
+    bottom: -10px;
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 0 0 30px;
+  color: #141823;
+  font-weight: bold;
+  line-height: 120%;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #FA7D08;
+    bottom: -10px;
+  }
+}
+
 h2 {
-  margin: 0;
+  font-size: 20px;
+}
+
+.h2--center {
+  text-align: center;
+
+  &::before {
+    left: 33%;
+  }
+}
+
+h3 {
+
+}
+
+p {
+  color: #262C32;
+  font-size: 15px;
+  line-height: 170%;
+}
+
+li {
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.sub-ol {
+  counter-reset: item;
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.sub-li {
+  color: #636363;
+  position: relative;
+  margin-top: 10px;
+
+
+  &::before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+  }
 }
