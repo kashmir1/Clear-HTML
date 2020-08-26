@@ -720,6 +720,10 @@ li {
   padding: 30px 12px 22px;
   margin-top: 69px; }
 
+.consultation-form__wrapper {
+  padding-left: 3px;
+  padding-right: 3px; }
+
 .consultation-form--light {
   background-color: #FBFBFB;
   border: 1px solid #EEEEEE; }
@@ -743,7 +747,7 @@ li {
   color: #141823;
   text-align: center;
   font-size: 18px;
-  padding-left: 20px;
+  padding-left: 38px;
   margin-top: 0; }
   .consultation-form__title--light::before {
     top: -8px; }
@@ -1197,5 +1201,50 @@ li {
     margin-top: -5px; }
     .faq .panel p {
       margin: 0; }
+
+.footer {
+  background-color: #212527;
+  margin-top: 40px;
+  padding: 24px 15px 32px;
+  position: relative; }
+
+.footer__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px; }
+
+.footer__search {
+  background-color: #3F4144;
+  height: 38px;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: 0;
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 40px; }
+  .footer__search::-webkit-input-placeholder {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); }
+  .footer__search::-moz-placeholder {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); }
+  .footer__search:-ms-input-placeholder {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); }
+  .footer__search::-ms-input-placeholder {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); }
+  .footer__search::placeholder {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); }
 
 /*# sourceMappingURL=style.css.map */

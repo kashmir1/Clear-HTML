@@ -1,0 +1,32 @@
+.footer {
+  background-color: #212527;
+  margin-top: 40px;
+  padding: 24px 15px 32px;
+  position: relative;
+}
+
+
+.footer__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer__search {
+  background-color: #3F4144;
+  height: 38px;
+  position: relative;
+  width: 100%;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: 0;
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 40px;
+
+  &::placeholder {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
