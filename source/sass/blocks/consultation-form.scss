@@ -4,6 +4,11 @@
   margin-top: 69px;
 }
 
+.consultation-form--light {
+  background-color: #FBFBFB;
+  border: 1px solid #EEEEEE;
+}
+
 .consultation-form__title {
   text-transform: uppercase;
   color: #FFFFFF;
@@ -22,6 +27,18 @@
   }
 }
 
+.consultation-form__title--light {
+  color: #141823;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 20px;
+  margin-top: 0;
+
+  &::before {
+    top: -8px;
+  }
+}
+
 .consultation-form__input {
   width: 100%;
   height: 52px;
@@ -36,6 +53,16 @@
   }
 }
 
+.consultation-form__input--light {
+  color: #222222;
+  border: 1px solid #D7D7D7;
+
+  &::placeholder {
+    color: #222222;
+    opacity: 0.6;
+  }
+}
+
 .consultation-form__button {
   width: 100%;
   height: 52px;
@@ -45,6 +72,7 @@
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
+  border: 0;
 
   &::before {
     content: '';
@@ -57,6 +85,14 @@
   }
 }
 
+.consultation-form__button--light {
+  font-size: 14px;
+
+  &::before {
+    left: 70px;
+  }
+}
+
 .consultation-form__note {
   display: inline-block;
   margin-top: 12px;
@@ -66,6 +102,16 @@
   line-height: 170%;
 }
 
+.consultation-form__note--light {
+  color: #262C32;
+  opacity: 0.5;
+  text-align: center;
+}
+
 .consultation-form__link {
   color: #ffffff;
+}
+
+.consultation-form__link--light {
+  color: #262C32;
 }

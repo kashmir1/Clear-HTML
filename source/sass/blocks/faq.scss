@@ -1,6 +1,10 @@
 .faq {
   margin-top: 80px;
 
+  .faq__wrapper {
+    margin-top: 56px;
+  }
+
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
     position: relative;
@@ -17,6 +21,7 @@
     border-bottom: 1px solid #DDDDDD;
     outline: none;
     transition: 0.4s;
+    margin-bottom: 5px;
 
     &::before {
       content: '';
@@ -25,20 +30,45 @@
       height: 45px;
       background-color: #FA7D08;
       left: 0;
+      background-image: url("../img/left-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+  .active {
     background-color: #F1F1F1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      background-color: #FA7D08;
+      left: 0;
+      background-image: url("../img/arrow-drop.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   /* Style the accordion panel. Note: hidden by default */
   .panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 15px;
+    background-color: #F9F9F9;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
     display: none;
     overflow: hidden;
+    color: #636363;
+    font-size: 15px;
+    line-height: 170%;
+    margin-top: -5px;
+
+    p {
+      margin: 0;
+    }
   }
 }
 

@@ -720,6 +720,10 @@ li {
   padding: 30px 12px 22px;
   margin-top: 69px; }
 
+.consultation-form--light {
+  background-color: #FBFBFB;
+  border: 1px solid #EEEEEE; }
+
 .consultation-form__title {
   text-transform: uppercase;
   color: #FFFFFF;
@@ -734,6 +738,15 @@ li {
     height: 50px;
     background-image: url("../img/consultation.svg");
     background-repeat: no-repeat; }
+
+.consultation-form__title--light {
+  color: #141823;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 20px;
+  margin-top: 0; }
+  .consultation-form__title--light::before {
+    top: -8px; }
 
 .consultation-form__input {
   width: 100%;
@@ -754,6 +767,25 @@ li {
   .consultation-form__input::placeholder {
     color: #ffffff; }
 
+.consultation-form__input--light {
+  color: #222222;
+  border: 1px solid #D7D7D7; }
+  .consultation-form__input--light::-webkit-input-placeholder {
+    color: #222222;
+    opacity: 0.6; }
+  .consultation-form__input--light::-moz-placeholder {
+    color: #222222;
+    opacity: 0.6; }
+  .consultation-form__input--light:-ms-input-placeholder {
+    color: #222222;
+    opacity: 0.6; }
+  .consultation-form__input--light::-ms-input-placeholder {
+    color: #222222;
+    opacity: 0.6; }
+  .consultation-form__input--light::placeholder {
+    color: #222222;
+    opacity: 0.6; }
+
 .consultation-form__button {
   width: 100%;
   height: 52px;
@@ -762,7 +794,8 @@ li {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
-  position: relative; }
+  position: relative;
+  border: 0; }
   .consultation-form__button::before {
     content: '';
     position: absolute;
@@ -772,6 +805,11 @@ li {
     background-repeat: no-repeat;
     left: 80px; }
 
+.consultation-form__button--light {
+  font-size: 14px; }
+  .consultation-form__button--light::before {
+    left: 70px; }
+
 .consultation-form__note {
   display: inline-block;
   margin-top: 12px;
@@ -780,8 +818,16 @@ li {
   font-size: 12px;
   line-height: 170%; }
 
+.consultation-form__note--light {
+  color: #262C32;
+  opacity: 0.5;
+  text-align: center; }
+
 .consultation-form__link {
   color: #ffffff; }
+
+.consultation-form__link--light {
+  color: #262C32; }
 
 .content {
   margin-top: 30px;
@@ -1092,6 +1138,8 @@ li {
   /* Style the buttons that are used to open and close the accordion panel */
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   /* Style the accordion panel. Note: hidden by default */ }
+  .faq .faq__wrapper {
+    margin-top: 56px; }
   .faq .accordion {
     position: relative;
     background-color: #F1F1F1;
@@ -1111,20 +1159,43 @@ li {
     border-bottom: 1px solid #DDDDDD;
     outline: none;
     -webkit-transition: 0.4s;
-    transition: 0.4s; }
+    transition: 0.4s;
+    margin-bottom: 5px; }
     .faq .accordion::before {
       content: '';
       position: absolute;
       width: 45px;
       height: 45px;
       background-color: #FA7D08;
-      left: 0; }
-  .faq .active, .faq .accordion:hover {
+      left: 0;
+      background-image: url("../img/left-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center; }
+  .faq .active {
     background-color: #F1F1F1; }
+    .faq .active::before {
+      content: '';
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      background-color: #FA7D08;
+      left: 0;
+      background-image: url("../img/arrow-drop.svg");
+      background-repeat: no-repeat;
+      background-position: center; }
   .faq .panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 15px;
+    background-color: #F9F9F9;
+    border: 1px solid #ECECEC;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: none;
-    overflow: hidden; }
+    overflow: hidden;
+    color: #636363;
+    font-size: 15px;
+    line-height: 170%;
+    margin-top: -5px; }
+    .faq .panel p {
+      margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
