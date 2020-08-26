@@ -1087,4 +1087,44 @@ li {
     background-repeat: no-repeat;
     background-image: url("../img/done.svg"); }
 
+.faq {
+  margin-top: 80px;
+  /* Style the buttons that are used to open and close the accordion panel */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the accordion panel. Note: hidden by default */ }
+  .faq .accordion {
+    position: relative;
+    background-color: #F1F1F1;
+    height: 45px;
+    font-size: 16px;
+    color: #141823;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 60px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #DDDDDD;
+    outline: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+    .faq .accordion::before {
+      content: '';
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      background-color: #FA7D08;
+      left: 0; }
+  .faq .active, .faq .accordion:hover {
+    background-color: #F1F1F1; }
+  .faq .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden; }
+
 /*# sourceMappingURL=style.css.map */
