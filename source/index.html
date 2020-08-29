@@ -13,7 +13,9 @@
 <body>
 <header class="header">
   <div class="header__top">
-    <label class="header__menu-toggle menu-toggle" for="menu"></label>
+    <a href="javascript:void(0);" class="header__menu-toggle" onclick="myFunction()">
+      <i class="fa fa-bars">open</i>
+    </a>
     <div class="header__logo-wrapper">
       <img src="img/star.png" width="64" height="50" alt="">
       <a href="index.html"><img src="img/logo.svg"alt=""></a>
@@ -25,46 +27,42 @@
     <span class="header__timing">Пн-Вс с 9 до 18</span>
   </div>
 
+  <div class="main-nav">
 
+    <div class="nav-title" id="myLinks">
+
+      <!-- <a href="#" class="nav-link" id="layer1">← back</a> -->
+      <ul>
+        <li><a href="#" class="l1" value="2" >About Us<span> ›</span></a></li>
+        <li><a href="#" class="l1" value="2" >How It Works</a></li>
+        <li><a href="#" class="l1" value="2">Start a Site</a></li>
+        <li><a href="#" class="l1" value="2" >Resources</a></li>
+        <li><a href="#" class="l1" value="2" >Search</a></li>
+      </ul>
+    </div>
+    <div class="layer1 side-menu hide" id="layer2" style="height: 100%;" >
+      <ul data-value="2">
+        <li><a href="#" class="nav-link l1" value="3" id="l2" style="background-color: #852470; ">← back</a></li>
+        <li><a href="#" class="l1" value="3">About Us</a></li>
+        <li><a href="#" class="l1" value="3" id="l2">Get Involved<span> ›</span></a></li>
+        <li><a href="#" class="l1" value="3">History</a></li>
+        <li><a href="#" class="l1" value="3">Financials & Ratings</a></li>
+        <li><a href="#" class="l1" value="3" >Our People</a></li>
+        <li><a href="#" class="l1" value="3" >Careers</a></li>
+      </ul>
+    </div>
+    <div class="layer2 side-menu hide" id="layer3" style="margin-top: 52px; height: calc(100% - 52px); background-color: #a93c91;">
+      <ul>
+        <li><a href="#" class="">Donate</a></li>
+        <li><a href="#" class="">Partnerships</a></li>
+        <li><a href="#" class="">Share this Site</a></li>
+      </ul>
+    </div>
+  </div>
 
 </header>
 
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  <i class="fa fa-bars">open</i>
-</a>
 
-<div class="container">
-
-  <div class="nav-title" id="myLinks">
-
-    <!-- <a href="#" class="nav-link" id="layer1">← back</a> -->
-    <ul>
-      <li><a href="#" class="l1" value="2" >About Us<span> ›</span></a></li>
-      <li><a href="#" class="l1" value="2" >How It Works</a></li>
-      <li><a href="#" class="l1" value="2">Start a Site</a></li>
-      <li><a href="#" class="l1" value="2" >Resources</a></li>
-      <li><a href="#" class="l1" value="2" >Search</a></li>
-    </ul>
-  </div>
-  <div class="layer1 side-menu hide" id="layer2" style="height: 100%;" >
-    <ul data-value="2">
-      <li><a href="#" class="nav-link l1" value="3" id="l2" style="background-color: #852470; ">← back</a></li>
-      <li><a href="#" class="l1" value="3">About Us</a></li>
-      <li><a href="#" class="l1" value="3" id="l2">Get Involved<span> ›</span></a></li>
-      <li><a href="#" class="l1" value="3">History</a></li>
-      <li><a href="#" class="l1" value="3">Financials & Ratings</a></li>
-      <li><a href="#" class="l1" value="3" >Our People</a></li>
-      <li><a href="#" class="l1" value="3" >Careers</a></li>
-    </ul>
-  </div>
-  <div class="layer2 side-menu hide" id="layer3" style="margin-top: 52px; height: calc(100% - 52px); background-color: #a93c91;">
-    <ul>
-      <li><a href="#" class="">Donate</a></li>
-      <li><a href="#" class="">Partnerships</a></li>
-      <li><a href="#" class="">Share this Site</a></li>
-    </ul>
-  </div>
-</div>
 
 
 <main>

@@ -365,10 +365,10 @@ li {
     content: counters(item, ".") " ";
     counter-increment: item; }
 
-.container #myLinks {
+.main-nav #myLinks {
   display: none; }
 
-.container {
+.main-nav {
   position: relative;
   overflow: hidden;
   background: #efefef;
