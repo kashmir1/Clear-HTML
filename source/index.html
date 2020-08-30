@@ -10,10 +10,13 @@
   <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 </head>
 <!--Хедер-->
-<body style="background: white">
+<body>
 <header class="header">
   <div class="header__top">
-    <label class="header__menu-toggle menu-toggle" onclick="myFunction()" for="menu"></label>
+
+    <a href="javascript:void(0);" class="header__menu-toggle" onclick="myFunction()">
+
+    </a>
     <div class="header__logo-wrapper">
       <img src="img/star.png" width="64" height="50" alt="">
       <a href="index.html"><img src="img/logo.svg"alt=""></a>
@@ -25,125 +28,35 @@
     <span class="header__timing">Пн-Вс с 9 до 18</span>
   </div>
 
-  <div id="navigation-wrapper">
-
-    <!--Checkbox to show/hide menu-->
-    <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-
-    <div class="menu">
-      <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-      <ul>
-        <li>
-          <a href="#">Menu-1</a>
-        </li>
-        <li>
-          <a href="#">Menu-2</a>
-        </li>
-        <li>
-          <label for="menu-3">Menu-3</label>
-          <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
-          <div class="menu">
-            <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
-            <ul>
-              <li>
-                <a href="#">Menu-3-1</a>
-              </li>
-              <li>
-                <label for="menu-3-2">Menu-3-2</label>
-                <input type="checkbox" id="menu-3-2" name="menu-3-2" class="menu-checkbox">
-                <div class="menu">
-                  <label class="menu-toggle" for="menu-3-2"><span>Toggle</span></label>
-                  <ul>
-                    <li>
-                      <a href="#">Menu-3-2-1</a>
-                    </li>
-                    <li>
-                      <a href="#">Menu-3-2-2</a>
-                    </li>
-                    <li>
-                      <label for="menu-3-2-3">Menu-3-2-3</label>
-                      <input type="checkbox" id="menu-3-2-3" name="menu-3-2-3" class="menu-checkbox">
-                      <div class="menu">
-                        <label class="menu-toggle" for="menu-3-2-3"><span>Toggle</span></label>
-                        <ul>
-                          <li>
-                            <a href="#">Menu-3-2-3-1</a>
-                          </li>
-                          <li>
-                            <a href="#">Menu-3-2-3-2</a>
-                          </li>
-                          <li>
-                            <a href="#">Menu-3-2-3-3</a>
-                          </li>
-                          <li>
-                            <a href="#">Menu-3-2-3-4</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#">Menu-3-2-4</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a href="#">Menu-3-3</a>
-              </li>
-              <li>
-                <a href="#">Menu-3-4</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <label for="menu-4">Menu-4</label>
-          <input type="checkbox" id="menu-4" name="menu-4" class="menu-checkbox">
-          <div class="menu">
-            <label class="menu-toggle" for="menu-4"><span>Toggle</span></label>
-            <ul>
-              <li>
-                <a href="#">Menu-4-1</a>
-              </li>
-              <li>
-                <a href="#">Menu-4-2</a>
-              </li>
-              <li>
-                <a href="#">Menu-4-3</a>
-              </li>
-              <li>
-                <a href="#">Menu-4-4</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <label for="menu-5">Menu-5</label>
-          <input type="checkbox" id="menu-5" name="menu-5" class="menu-checkbox">
-          <div class="menu">
-            <label class="menu-toggle" for="menu-5"><span>Toggle</span></label>
-            <ul>
-              <li>
-                <a href="#">Menu-5-1</a>
-              </li>
-              <li>
-                <a href="#">Menu-5-2</a>
-              </li>
-              <li>
-                <a href="#">Menu-5-3</a>
-              </li>
-              <li>
-                <a href="#">Menu-5-4</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a href="#">Menu-6</a>
-        </li>
+  <div class="main-nav">
+    <div class="nav-title" id="myLinks">
+      <ul class="main-nav__list">
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link">Главная</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link main-nav__next" value="2">Услуги</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link">Расценки</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link">Отзывы</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link" value="2">Статьи</a></li>
       </ul>
     </div>
-  </div><!-- #navigation-wrapper -->
+    <div class="layer1 side-menu hide" id="layer2">
+      <ul data-value="2">
+        <li class="nav-title__item"><a href="#" class="nav-link l1 main-nav__link" value="3" id="l2">← back</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link" value="3">About Us</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link" value="3" id="l2">Get Involved<span> ›</span></a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link" value="3">History</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link" value="3">Financials & Ratings</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link" value="3" >Our People</a></li>
+        <li class="nav-title__item"><a href="#" class="l1 main-nav__link" value="3" >Careers</a></li>
+      </ul>
+    </div>
+    <div class="layer2 side-menu hide" id="layer3" style="margin-top: 52px; height: calc(100% - 52px); background-color: #a93c91;">
+      <ul>
+        <li class="nav-title__item"><a href="#" class="main-nav__link">Donate</a></li>
+        <li class="nav-title__item"><a href="#" class="main-nav__link">Partnerships</a></li>
+        <li class="nav-title__item"><a href="#" class="main-nav__link">Share this Site</a></li>
+      </ul>
+    </div>
+  </div>
 
 </header>
 
@@ -238,7 +151,7 @@
             proin condimentum. Pellentesque justo, ultricies arcu, porta lorem in nec egestas non. </p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title advantages__title--lock">Беспрепятственный допуск до ремонтных работ</h3>
+          <h3 class="advantages__title advantages__title--lock">Беспрепятственный допуск до ремонтных работ</h3>
           <p class="advantages__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit purus auctor et aliquet proin hac fames.
             Eget sollicitudin massa ac, augue aliquam tortor fringilla interdum. Risus vestibulum duis quis
             proin condimentum. Pellentesque justo, ultricies arcu, porta lorem in nec egestas non. </p>
@@ -259,7 +172,7 @@
             proin condimentum. Pellentesque justo, ultricies arcu, porta lorem in nec egestas non. </p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title advantages__title--diag">Принятые решения согласовываются до реализации объекта, экономия времени и денег.
+          <h3 class="advantages__title advantages__title--diag">Принятые решения согласовываются до реализации объекта, экономия времени и денег.
 
           </h3>
           <p class="advantages__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit purus auctor et aliquet proin hac fames.
@@ -311,12 +224,12 @@
       </div>
     </section>
     <section class="reasons">
-      <h2 class="h2--center">Причины заказать проект у нас.</h2>
+      <h2 class="h2--center">Причины заказать проект у нас.</h2>
       <ul class="reasons__list">
         <li class="reasons__item">
           <img class="reasons__img" src="img/types.svg" width="65" height="73" alt="Все виды проектирования">
           <h3 class="reasons__title">Все виды проектирования</h3>
-          <p class="reasons__desc">Вы сможете заказать все проекты в одном месте, не теряя время и силы на поиски дополнительных компаний</p>
+          <p class="reasons__desc">Вы сможете заказать все проекты в одном месте, не теряя время и силы на поиски дополнительных компаний</p>
         </li>
         <li class="reasons__item">
           <img class="reasons__img" src="img/manager.svg" width="65" height="66" alt="Персональный менеджер">
@@ -336,7 +249,7 @@
         <li class="reasons__item">
           <img class="reasons__img" src="img/consultations.svg" width="65" height="66" alt="Согласование">
           <h3 class="reasons__title">Согласование</h3>
-          <p class="reasons__desc">Мы утверждаем и получаем разрешения в надзорных органах на все свои проекты</p>
+          <p class="reasons__desc">Мы утверждаем и получаем разрешения в надзорных органах на все свои проекты</p>
         </li>
       </ul>
     </section>
@@ -360,7 +273,7 @@
           <p class="work-shceme__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis enim pellentesque lacus neque urna at ut</p>
         </li>
         <li class="work-scheme__item work-scheme__item--statement">
-          <h3 class="work-scheme__title">Проект согласовывается с заказчиком</h3>
+          <h3 class="work-scheme__title">Проект согласовывается с заказчиком</h3>
           <p class="work-shceme__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis enim pellentesque lacus neque urna at ut</p>
         </li>
         <li class="work-scheme__item work-scheme__item--done">
@@ -454,15 +367,6 @@
 </footer>
 <script src="js/slider.js"></script>
 <script src="js/faq.js"></script>
-<script>
-  function myFunction() {
-    var x = document.querySelector("body");
-    if (x.style.background === "white") {
-      x.style.background = "black";
-    } else {
-      x.style.background = "white";
-    }
-  }
-</script>
+<script src="js/menu.js"></script>
 </body>
 </html>
